@@ -15,10 +15,6 @@ run cd ..
 RUN ls
 RUN pwd
 
-CMD ["npm", "start"]
-RUN ls
-RUN pwd
-
 EXPOSE 3443
 EXPOSE 3000
-CMD ["npm", "run", "start"]
+CMD ["npm", "start"]
