@@ -5,13 +5,13 @@ CMD ["npm", "install"]
 RUN ls
 RUN pwd
 
-CMD ["cd", "client"]
+RUN cd client
 RUN ls
 RUN pwd
 
 CMD ["npm", "install"]
 CMD ["npm", "run", "build"]
-CMD ["cd", ".."]
+run cd ..
 RUN ls
 RUN pwd
 
