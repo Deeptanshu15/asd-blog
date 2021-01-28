@@ -1,14 +1,12 @@
 FROM node
 WORKDIR /usr/src/app
 
+COPY . ./
 
 RUN ls
 RUN pwd
 
-CMD ["npm", "install"]
-
-COPY . ./
-
+RUN npm install
 
 RUN ls
 RUN pwd
